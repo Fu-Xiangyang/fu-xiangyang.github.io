@@ -4,12 +4,31 @@
   
     
     <entry>
+      <title>Fundamentals of Mechanical Design</title>
+      <link href="/2023/08/31/fundamentals-of-mechanical-design/"/>
+      <url>/2023/08/31/fundamentals-of-mechanical-design/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>马克思主义原理笔记</title>
       <link href="/2023/08/31/ma-ke-si-zhu-yi-yuan-li-bi-ji/"/>
       <url>/2023/08/31/ma-ke-si-zhu-yi-yuan-li-bi-ji/</url>
       
-        <content type="html"><![CDATA[<h1 id="马克思主义原理课堂笔记"><a href="#马克思主义原理课堂笔记" class="headerlink" title="马克思主义原理课堂笔记"></a>马克思主义原理课堂笔记</h1><h2 id="绪论"><a href="#绪论" class="headerlink" title="绪论"></a>绪论</h2><ol><li>马克思主义的三个基本组成部分：<strong>马克思主义哲学</strong>，<strong>马克思主义政治经济学</strong>，<strong>科学社会主义</strong></li><li>19世纪的社会灾难：<strong>社会两极分化，工人极端困苦</strong></li></ol><p>​   <strong>周期性经济危机频繁爆发</strong></p><ol start="3"><li>马克思主义</li></ol>]]></content>
+        <content type="html"><![CDATA[<h1 id="马克思主义原理课堂笔记"><a href="#马克思主义原理课堂笔记" class="headerlink" title="马克思主义原理课堂笔记"></a>马克思主义原理课堂笔记</h1><h2 id="绪论"><a href="#绪论" class="headerlink" title="绪论"></a>绪论</h2><ol><li><p>马克思主义的三个基本组成部分：<strong>马克思主义哲学</strong>，<strong>马克思主义政治经济学</strong>，<strong>科学社会主义</strong></p></li><li><p>19世纪的社会灾难：<strong>社会两极分化，工人极端困苦</strong>； <strong>周期性经济危机频繁爆发</strong></p></li><li><p>马克思主义创立的直接理论来源：<strong>德国古典哲学</strong>，<strong>英国古典政治经济学</strong>，<strong>英法空想社会主义</strong></p></li></ol><blockquote><p>​更广泛的来说，马克思主义的思想来源不只这些，还有<em>古希腊罗马哲学</em>，<em>文艺复兴运动的思想成果</em>，<em>法国复辟时期历史学家的进步思想</em>等</p></blockquote><ol start="4"><li>马克思主义产生的自然科学前提：<strong>细胞学说</strong>，<strong>能量守恒和转化定律</strong>，<strong>生物进化论</strong></li></ol><blockquote><p>三者体现了唯物主义的世界观</p></blockquote><ol start="5"><li>1842年2月，<strong>《共产党宣言》</strong>发表，标志着马克思主义的公开问世</li></ol>]]></content>
       
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
       
       
         <tags>
@@ -38,32 +57,6 @@
             <tag> 梁山派 </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>test1</title>
-      <link href="/2023/08/30/test1/"/>
-      <url>/2023/08/30/test1/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2023/08/30/hello-world/"/>
-      <url>/2023/08/30/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-      
-      
       
     </entry>
     
