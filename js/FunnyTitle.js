@@ -3,12 +3,12 @@ var OriginTitle = document.title;
 var titleTime;
 document.addEventListener('visibilitychange', function () {
     if (document.hidden) {
-        $('[rel="icon"]').attr('href', "/funny.ico");
+        $('[rel="icon"]').attr('href', "https://blogfxy.oss-cn-beijing.aliyuncs.com/WI%243UCVH%28L4%5B%25G%5B8X166%7D%5DV.png");
         document.title = '╭(°A°`)╮ 页面崩溃啦 ~';
         clearTimeout(titleTime);
     }
     else {
-        $('[rel="icon"]').attr('href', "/favicon.ico");
+        $('[rel="icon"]').attr('href', "https://blogfxy.oss-cn-beijing.aliyuncs.com/WI%243UCVH%28L4%5B%25G%5B8X166%7D%5DV.png");
         document.title = '(ฅ>ω<*ฅ) 噫又好啦 ~' + OriginTitle;
         titleTime = setTimeout(function () {
             document.title = OriginTitle;
