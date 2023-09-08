@@ -390,7 +390,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    369
+                    733
                 </div>
                 
 
@@ -498,36 +498,145 @@
 </li>
 </ul>
 <h3 id="Homeworks"><a href="#Homeworks" class="headerlink" title="Homeworks"></a>Homeworks</h3><p>Select a mechanical component from Part 3 of this book (roller bearings, springs, etc.), report on the information obtained on five manufacturers or suppliers using a search engine.</p>
+<p><a target="_blank" rel="noopener" href="https://blogfxy.oss-cn-beijing.aliyuncs.com/Fundamental_of_Mechanical_Design/Chapter1-Introduction--homework--%E5%8F%91%E9%80%81%E5%AD%A6%E7%94%9F%E6%97%A0%E7%AD%94%E6%A1%88%E7%89%88.docx">this is the link of homework</a></p>
+<p><a target="_blank" rel="noopener" href="https://blogfxy.oss-cn-beijing.aliyuncs.com/Fundamental_of_Mechanical_Design/Chapter%201--introduction.pptx">this is the ppt of chapter 1</a></p>
+<h2 id="Chapter-2-Kinematics-Fundamentals"><a href="#Chapter-2-Kinematics-Fundamentals" class="headerlink" title="Chapter 2 Kinematics Fundamentals"></a>Chapter 2 Kinematics Fundamentals</h2><h3 id="Degree-of-Freedom-DOF"><a href="#Degree-of-Freedom-DOF" class="headerlink" title="Degree of Freedom(DOF)"></a>Degree of Freedom(DOF)</h3><p>​	The system’s DOF is equal to the number of in dependent parameters (measurements) which are needed to uniquely define its position in space at any instant of time. </p>
+<blockquote>
+<p>A rigid body in plane motion has three DOF.</p>
+<p>Any rigid body in three-space has six DOF.</p>
+</blockquote>
+<p>​	We cannot determine deformations of a body until we define <strong>its size, shape, material properties, and loadings</strong>.</p>
+<h3 id="Types-of-Motion——in-planar-motion"><a href="#Types-of-Motion——in-planar-motion" class="headerlink" title="Types of Motion——in planar motion"></a>Types of Motion——in planar motion</h3><ul>
+<li><p>Pure rotation</p>
+  <img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/Fundamental_of_Mechanical_Design/chap_2/rotation.png">
+</li>
+<li><p>Pure translation</p>
+  <img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/Fundamental_of_Mechanical_Design/chap_2/translation.png" style="zoom:67%;">
+</li>
+<li><p>Complex motion</p>
+<p>  <img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/Fundamental_of_Mechanical_Design/chap_2/complex.gif"></p>
+</li>
+</ul>
+<p>connection ——&gt; Constraints ——&gt; Loss DOF</p>
+<h3 id="Link"><a href="#Link" class="headerlink" title="Link"></a>Link</h3><p>​	A <strong>link</strong> is an (assumed) rigid body which possesses at least two <strong>nodes</strong> which are <em>points for attachment to other links.</em></p>
+<img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/Fundamental_of_Mechanical_Design/chap_2/link.png" style="zoom:67%;">
+
+<ul>
+<li><p>Ground : Any link or links that are fixed with respect to the reference frame.</p>
+</li>
+<li><p>Crank : A link which makes a complete revolution and is pivoted to ground.</p>
+  <img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/Fundamental_of_Mechanical_Design/chap_2/Crank.png" style="zoom:50%;">
+</li>
+<li><p>Rocker :  A link which has oscillatory (back and forth) rotation and pivoted to ground.</p>
+  <img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/Fundamental_of_Mechanical_Design/chap_2/Rocker.png" style="zoom:50%;">
+</li>
+<li><p>Coupler : A link which has complex motion and is pivoted to ground.</p>
+  <img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/Fundamental_of_Mechanical_Design/chap_2/Coupler.png" style="zoom:50%;"></li>
+</ul>
+<h3 id="Connection——Joints"><a href="#Connection——Joints" class="headerlink" title="Connection——Joints"></a>Connection——Joints</h3><p>​	A <strong>joint</strong> is <em>a connection between two or more links (at their nodes), which allows some motion, or potential motion, between the connected links.</em> </p>
+<p><strong>Joints can be classified by the type of contact between the elements,line,point or surface.</strong></p>
+<ul>
+<li>Surface contact —— Lower pair</li>
+</ul>
 <table>
 <thead>
 <tr>
-<th align="center">Bearing</th>
-<th align="center">domestic</th>
-<th align="center">Global</th>
-<th align="center">Links</th>
+<th align="center"><img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/Fundamental_of_Mechanical_Design/chap_2/lower0.gif" style="zoom:50%;"></th>
+<th align="center"><img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/Fundamental_of_Mechanical_Design/chap_2/lower2.png" style="zoom: 50%;"></th>
+<th align="center"><img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/Fundamental_of_Mechanical_Design/chap_2/lower1.png" style="zoom:10%;"></th>
+<th align="center"><img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/Fundamental_of_Mechanical_Design/chap_2/lower3.png" style="zoom:15%;"></th>
+</tr>
+</thead>
+</table>
+<ul>
+<li>Point or line contact —— Higher pair</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center"><img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/Fundamental_of_Mechanical_Design/chap_2/higer0.png" style="zoom:50%;"></th>
+<th align="center"><img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/Fundamental_of_Mechanical_Design/chap_2/higer1.gif" style="zoom:50%;"></th>
+</tr>
+</thead>
+</table>
+<h3 id="Determining-DOF"><a href="#Determining-DOF" class="headerlink" title="Determining DOF"></a>Determining DOF</h3><img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/Fundamental_of_Mechanical_Design/chap_2/determineDOF.png" style="zoom:67%;">
+
+<p>Lower Pairs ——two constraints,one-freedom</p>
+<p>Higher Pairs——one constraints,two-freedom</p>
+<p><strong>Kutzbach’s</strong> <strong>Modification of</strong> <strong>Gruebler’s</strong> <strong>Equation:</strong></p>
+<p><img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/Fundamental_of_Mechanical_Design/chap_2/calDOFformula.png"></p>
+<blockquote>
+<p>F = DOF</p>
+<p>n = number of links</p>
+<p>PL = number of lower pairs</p>
+<p>PH = number of higher pairs</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="center"><img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/Fundamental_of_Mechanical_Design/chap_2/calDOF0.png" style="zoom:50%;"></th>
+<th align="center"><img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/Fundamental_of_Mechanical_Design/chap_2/calDOF1.png" style="zoom: 15%;"></th>
+<th align="center"><img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/Fundamental_of_Mechanical_Design/chap_2/calDOF2.png" style="zoom:50%;"></th>
+</tr>
+</thead>
+</table>
+<h3 id="Kinematic-Chain"><a href="#Kinematic-Chain" class="headerlink" title="Kinematic Chain"></a>Kinematic Chain</h3><p>​	An assemblage of links and joints, interconnected in a way to provide a controlled output motion in response to a supplied input motion.</p>
+<p><strong>Mechanism</strong>: A kinematic chain in which at least one link has been “grounded,” or attached, to the frame of reference (which itself may be in motion).</p>
+<p><strong>Machine</strong>: A combination of resistant bodies arranged to compel the mechanical forces of nature to do work accompanied by determinate motions.</p>
+<h3 id="Kinematical-Diagrams"><a href="#Kinematical-Diagrams" class="headerlink" title="Kinematical Diagrams"></a>Kinematical Diagrams</h3><p><img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/Fundamental_of_Mechanical_Design/chap_2/table.jpg"></p>
+<h3 id="Exercise1"><a href="#Exercise1" class="headerlink" title="Exercise1"></a>Exercise1</h3><table>
+<thead>
+<tr>
+<th align="center">Picture</th>
+<th align="center"><img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/Fundamental_of_Mechanical_Design/chap_2/exercise1_0.png" style="zoom: 13%;"></th>
+<th align="center"><img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/Fundamental_of_Mechanical_Design/chap_2/exercise1_1.png" style="zoom:40%;"></th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">No.1</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">No.2</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">No.3</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center"><strong>DOF</strong></td>
+<td align="center">3</td>
+<td align="center">1</td>
 </tr>
 </tbody></table>
-<p><a target="_blank" rel="noopener" href="https://blogfxy.oss-cn-beijing.aliyuncs.com/Fundamental_of_Mechanical_Design/Chapter1-Introduction--homework--%E5%8F%91%E9%80%81%E5%AD%A6%E7%94%9F%E6%97%A0%E7%AD%94%E6%A1%88%E7%89%88.docx">this is the link of homework</a></p>
-<p><a target="_blank" rel="noopener" href="https://blogfxy.oss-cn-beijing.aliyuncs.com/Fundamental_of_Mechanical_Design/Chapter%201--introduction.pptx">this is the ppt of chapter 1</a></p>
+<h3 id="Three-Consideration"><a href="#Three-Consideration" class="headerlink" title="Three Consideration"></a>Three Consideration</h3><p>When determining DOF</p>
+<ul>
+<li>Multiple joint</li>
+</ul>
+<img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/Fundamental_of_Mechanical_Design/chap_2/multiJoint.png" style="zoom: 45%;">
+
+<p>number of links——M</p>
+<p>number of lower pairs——M</p>
+<ul>
+<li>Useless constraints</li>
+</ul>
+<img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/Fundamental_of_Mechanical_Design/chap_2/uselessCons.png" style="zoom: 60%;">
+
+
+
+<img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/Fundamental_of_Mechanical_Design/chap_2/uselessCons1.png" style="zoom: 15%;">
+
+<p>get rid of it(them) before calculating DOF</p>
+<ul>
+<li>passive DOF</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center"><img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/Fundamental_of_Mechanical_Design/chap_2/passiveDOF0.png" style="zoom: 15%;"></th>
+<th align="center"><img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/Fundamental_of_Mechanical_Design/chap_2/passiveDOF1.png" style="zoom:15%;"></th>
+</tr>
+</thead>
+</table>
+<h3 id="Exercise2"><a href="#Exercise2" class="headerlink" title="Exercise2"></a>Exercise2</h3><table>
+<thead>
+<tr>
+<th align="center"><img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/Fundamental_of_Mechanical_Design/chap_2/exercise2.png" style="zoom:50%;"></th>
+<th align="center"><img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/Fundamental_of_Mechanical_Design/chap_2/exercise2_1.jpg" style="zoom:15%;"></th>
+</tr>
+</thead>
+</table>
+<h3 id="Discuss"><a href="#Discuss" class="headerlink" title="Discuss"></a>Discuss</h3><p>The conditions of determining motion? </p>
+<p>Degree of freedom &lt;——&gt; the number of drivers</p>
 
                 
             </div>
@@ -878,7 +987,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">5.7k</span>
+                        class="white-color">6k</span>
             
             
             
