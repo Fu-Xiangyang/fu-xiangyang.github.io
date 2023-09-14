@@ -397,7 +397,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    528
+                    969
                 </div>
                 
 
@@ -477,6 +477,42 @@ y=Bx+Du</script><p>A: 系统矩阵</p>
 <p>B:输入（控制）矩阵</p>
 <p>C:输出矩阵</p>
 <p>D:直接传递矩阵</p>
+<h3 id="状态变量及状态空间表达式的模拟结构图"><a href="#状态变量及状态空间表达式的模拟结构图" class="headerlink" title="状态变量及状态空间表达式的模拟结构图"></a>状态变量及状态空间表达式的模拟结构图</h3><p>​        积分器的数目应等于状态变量数，将它们画在适当的位置，每个积分器的输出表示相应的某个状态变量，然后根据所给的状态方程和输出方程，画出相应的加法器和比例器，最后用箭头将这些元件连接起来。</p>
+<script type="math/tex; mode=display">
+\dot{x}\,\,=\,\,ax\,\,+\,\,hu</script><p>结构图为：</p>
+<p><img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%8E%A7%E5%88%B6%E6%8A%80%E6%9C%AF/monitu.bmp" alt=""></p>
+<h3 id="状态变量及状态空间表达式的建立"><a href="#状态变量及状态空间表达式的建立" class="headerlink" title="状态变量及状态空间表达式的建立"></a>状态变量及状态空间表达式的建立</h3><p><strong>从系统框图出发建立状态空间表达式</strong></p>
+<ul>
+<li>将系统传递函数方框图的各个环节变换成相应的模拟图；</li>
+<li><p>把每个积分器的输出选作为一个状态变量，其输入便是相应的微分；</p>
+</li>
+<li><p>根据系统的实际连接，写出相应的状态空间表达式。</p>
+</li>
+</ul>
+<p><strong>讨论n阶线性常系数微分方程（单输入单输出）：</strong></p>
+<script type="math/tex; mode=display">
+y^{\left( n \right)}+a_{n-1}y^{\left( n-1 \right)}+\cdots +a_1\dot{y}+a_0y=b_mu^{\left( m \right)}+b_{m-1}u^{\left( m-1 \right)}+\cdots +b_1\dot{u}+b_0u</script><p>相应的传递函数为：</p>
+<script type="math/tex; mode=display">
+W\left( s \right) =\frac{Y\left( s \right)}{U\left( s \right)}=\frac{b_ms^m+b_{m-1}s^{m-1}+\cdots +b_1s+b_0}{s^n+a_{n-1}s^{n-1}+\cdots +a_1s+a_0}\,\, , m\leqslant n</script><ol>
+<li>传递函数中没有零点的实现</li>
+</ol>
+<p>此时：</p>
+<script type="math/tex; mode=display">
+y^{\left( n \right)}+a_{n-1}y^{\left( n-1 \right)}+\cdots +a_1\dot{y}+a_0y=b_0u\left( t \right)</script><p>相应的传递函数为：</p>
+<script type="math/tex; mode=display">
+W\left( s \right) =\frac{Y\left( s \right)}{U\left( s \right)}=\frac{b_0}{s^n+a_{n-1}s^{n-1}+\cdots +a_1s+a_0}</script><p>列出系统的状态方程：</p>
+<script type="math/tex; mode=display">
+\dot{x}_1=x_2
+\\
+\dot{x}_2=x_3
+\\
+\vdots 
+\\
+\dot{x}_{n-1}=x_n
+\\
+\dot{x}_n=-a_0x_1-a_1x_2-\cdots -a_{n-2}x_{n-1}-a_{n-1}x_n+u</script><p>输出方程为：</p>
+<script type="math/tex; mode=display">
+y=b_0x_1</script><p>表示成矩阵形式，则为：</p>
 
                 
             </div>
@@ -839,7 +875,7 @@ y=Bx+Du</script><p>A: 系统矩阵</p>
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">6.5k</span>
+                        class="white-color">7k</span>
             
             
             
