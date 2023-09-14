@@ -4,11 +4,24 @@
   
     
     <entry>
+      <title>控制理论常用的Matlab函数</title>
+      <link href="/2023/09/13/kong-zhi-li-lun-chang-yong-de-matlab-han-shu/"/>
+      <url>/2023/09/13/kong-zhi-li-lun-chang-yong-de-matlab-han-shu/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Some-Proof</title>
       <link href="/2023/09/13/some-proof/"/>
       <url>/2023/09/13/some-proof/</url>
       
-        <content type="html"><![CDATA[<p><img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/SomeProof/1.jpg"></p><p><img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/SomeProof/2.jpg"></p><p><img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/SomeProof/3.jpg"></p><p><img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/SomeProof/4.jpg"></p><p><img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/SomeProof/5.jpg"></p>]]></content>
+        <content type="html"><![CDATA[<h1 id="Some-Proof"><a href="#Some-Proof" class="headerlink" title="Some Proof"></a>Some Proof</h1><p><img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/SomeProof/1.jpg"></p><p><img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/SomeProof/2.jpg"></p><p><img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/SomeProof/3.jpg"></p><p><img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/SomeProof/4.jpg"></p><p><img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/SomeProof/5.jpg"></p>]]></content>
       
       
       <categories>
@@ -162,7 +175,7 @@
       <link href="/2023/09/03/ji-qi-ren-kong-zhi-ji-zhu/"/>
       <url>/2023/09/03/ji-qi-ren-kong-zhi-ji-zhu/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h2 id="控制系统数学模型"><a href="#控制系统数学模型" class="headerlink" title="控制系统数学模型"></a>控制系统数学模型</h2><h3 id="状态变量及状态空间表达式"><a href="#状态变量及状态空间表达式" class="headerlink" title="状态变量及状态空间表达式"></a>状态变量及状态空间表达式</h3><ol><li><p>状态变量：状态变量是既足以完全确定系统运动状态而个数又是最小的一组变量，当其在 t= t0时刻的值已<br> 知时，则在给定 t≥ t0时刻的输入作用下，便能完全确定系统在任何 t≥t0时刻的行为。</p></li><li><p>状态矢量：n个状态变量组成的矢量。</p></li></ol><p>$$<br>x\left( t \right) =\left[ \begin{array}{c}<br>    x_1\left( t \right)\<br>    x_2\left( t \right)\<br>    \vdots\<br>    x_n\left( t \right)\<br>\end{array} \right] ,,or,,x^T\left( t \right) =\left[ x_1\left( t \right) ,x_2\left( t \right) ,\cdots ,x_n\left( t \right) \right]<br>$$</p><ol start="3"><li><p>状态空间：以状态变量为坐标轴所构成的n维空间，称为状态空间。</p></li><li><p>状态方程：由系统的状态变量构成的一阶微分方程组称为系统的状态方程。</p></li><li><p>输出方程：在指定系统输出的情况下，该输出与状态变量间的函数关系式，称为系统的输出方程。</p></li><li><p>状态空间表达式（状态空间模型）： 状态方程 + 输出方程</p></li></ol><p><strong>状态变量的特点：</strong></p><ul><li>独立性：状态变量之间<strong>线性</strong>独立</li><li>多样性：状态变量的选取并不唯一，实际上存在无穷多种方案</li><li>等价性：两个状态<strong>向量</strong>之间只差一个非奇异变换</li><li>现实性：状态变量<strong>通常取为</strong>含义明确的物理量</li><li>抽象性：状态变量<strong>可以没有</strong>直观的物理意义</li></ul><p><strong>状态空间表达式的一般形式：</strong></p><p>设单输入——单输出定常系统，其状态变量为：<br>$$<br>x_1, x_2, \cdots , x_n<br>$$<br>则状态方程的一般形式为：<br>$$<br>\dot{x}<em>1=a</em>{11}x_1+a_{12}x_2+\cdots +a_{1n}x_n+b_1u<br>\<br>\dot{x}<em>2=a</em>{21}x_1+a_{22}x_2+\cdots +a_{2n}x_n+b_2u<br>\<br>\vdots<br>\<br>\dot{x}<em>n=a</em>{n1}x_1+a_{n2}x_2+\cdots +a_{nn}x_n+b_nu<br>$$<br>输出方程式则有如下形式：<br>$$<br>y=c_1x_1+c_2x_2+\cdots +c_nx_n<br>$$<br>矩阵形式为：<br>$$<br>\dot{x}=Ax+bu<br>\<br>y=cx<br>$$<br>多输入——多输出：<br>$$<br>\dot{x}=Ax+Bu<br>\<br>y=Bx+Du<br>$$<br>A: 系统矩阵</p><p>B:输入（控制）矩阵</p><p>C:输出矩阵</p><p>D:直接传递矩阵</p>]]></content>
       
       
       <categories>
