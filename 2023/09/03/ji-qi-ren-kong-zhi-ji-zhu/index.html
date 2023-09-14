@@ -61,8 +61,6 @@
     
 <!-- hexo injector head_end start -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
 <!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 </head>
@@ -399,7 +397,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    529
+                    528
                 </div>
                 
 
@@ -430,8 +428,13 @@
 <li><p>状态矢量：n个状态变量组成的矢量。</p>
 </li>
 </ol>
-<p>$$<br>x\left( t \right) =\left[ \begin{array}{c}<br>    x_1\left( t \right)\<br>    x_2\left( t \right)\<br>    \vdots\<br>    x_n\left( t \right)\<br>\end{array} \right] ,,or,,x^T\left( t \right) =\left[ x_1\left( t \right) ,x_2\left( t \right) ,\cdots ,x_n\left( t \right) \right]<br>$$</p>
-<ol start="3">
+<script type="math/tex; mode=display">
+x\left( t \right) =\left[ \begin{array}{c}
+    x_1\left( t \right)\\
+    x_2\left( t \right)\\
+    \vdots\\
+    x_n\left( t \right)\\
+\end{array} \right] \,\,or\,\,x^T\left( t \right) =\left[ x_1\left( t \right) ,x_2\left( t \right) ,\cdots ,x_n\left( t \right) \right]</script><ol>
 <li><p>状态空间：以状态变量为坐标轴所构成的n维空间，称为状态空间。</p>
 </li>
 <li><p>状态方程：由系统的状态变量构成的一阶微分方程组称为系统的状态方程。</p>
@@ -450,7 +453,27 @@
 <li>抽象性：状态变量<strong>可以没有</strong>直观的物理意义</li>
 </ul>
 <p><strong>状态空间表达式的一般形式：</strong></p>
-<p>设单输入——单输出定常系统，其状态变量为：<br>$$<br>x_1, x_2, \cdots , x_n<br>$$<br>则状态方程的一般形式为：<br>$$<br>\dot{x}<em>1=a</em>{11}x_1+a_{12}x_2+\cdots +a_{1n}x_n+b_1u<br>\<br>\dot{x}<em>2=a</em>{21}x_1+a_{22}x_2+\cdots +a_{2n}x_n+b_2u<br>\<br>\vdots<br>\<br>\dot{x}<em>n=a</em>{n1}x_1+a_{n2}x_2+\cdots +a_{nn}x_n+b_nu<br>$$<br>输出方程式则有如下形式：<br>$$<br>y=c_1x_1+c_2x_2+\cdots +c_nx_n<br>$$<br>矩阵形式为：<br>$$<br>\dot{x}=Ax+bu<br>\<br>y=cx<br>$$<br>多输入——多输出：<br>$$<br>\dot{x}=Ax+Bu<br>\<br>y=Bx+Du<br>$$<br>A: 系统矩阵</p>
+<p>设单输入——单输出定常系统，其状态变量为：</p>
+<script type="math/tex; mode=display">
+x_1, x_2, \cdots , x_n</script><p>则状态方程的一般形式为：</p>
+<script type="math/tex; mode=display">
+\dot{x}_1=a_{11}x_1+a_{12}x_2+\cdots +a_{1n}x_n+b_1u
+\\
+\dot{x}_2=a_{21}x_1+a_{22}x_2+\cdots +a_{2n}x_n+b_2u
+\\
+\vdots 
+\\
+\dot{x}_n=a_{n1}x_1+a_{n2}x_2+\cdots +a_{nn}x_n+b_nu</script><p>输出方程式则有如下形式：</p>
+<script type="math/tex; mode=display">
+y=c_1x_1+c_2x_2+\cdots +c_nx_n</script><p>矩阵形式为：</p>
+<script type="math/tex; mode=display">
+\dot{x}=Ax+bu
+\\
+y=cx</script><p>多输入——多输出：</p>
+<script type="math/tex; mode=display">
+\dot{x}=Ax+Bu
+\\
+y=Bx+Du</script><p>A: 系统矩阵</p>
 <p>B:输入（控制）矩阵</p>
 <p>C:输出矩阵</p>
 <p>D:直接传递矩阵</p>
