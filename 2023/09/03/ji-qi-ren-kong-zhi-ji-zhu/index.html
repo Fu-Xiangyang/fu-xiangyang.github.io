@@ -390,14 +390,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-09-14
+                    2023-09-15
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    969
+                    1.6k
                 </div>
                 
 
@@ -513,7 +513,78 @@ W\left( s \right) =\frac{Y\left( s \right)}{U\left( s \right)}=\frac{b_0}{s^n+a_
 \dot{x}_n=-a_0x_1-a_1x_2-\cdots -a_{n-2}x_{n-1}-a_{n-1}x_n+u</script><p>输出方程为：</p>
 <script type="math/tex; mode=display">
 y=b_0x_1</script><p>表示成矩阵形式，则为：</p>
-
+<script type="math/tex; mode=display">
+\left[ \begin{array}{c}
+    \dot{x}_1\\
+    \dot{x}_2\\
+    \vdots\\
+    \dot{x}_{n-1}\\
+    \dot{x}_n\\
+\end{array} \right] =\left[ \begin{matrix}
+    0&        1&        0&        \cdots&        0\\
+    0&        0&        1&        \cdots&        0\\
+    \vdots&        \vdots&        \vdots&        \ddots&        \vdots\\
+    0&        0&        0&        \cdots&        1\\
+    -a_0&        -a_1&        -a_2&        \cdots&        -a_{n-1}\\
+\end{matrix} \right] \left[ \begin{array}{c}
+    x_1\\
+    x_2\\
+    \vdots\\
+    x_{n-1}\\
+    x_n\\
+\end{array} \right] +\left[ \begin{array}{c}
+    0\\
+    0\\
+    \vdots\\
+    0\\
+    1\\
+\end{array} \right] \boldsymbol{u}
+\\
+\dot{x}=\boldsymbol{Ax}+\boldsymbol{b}u
+\\
+\boldsymbol{y}=\underset{c}{\underbrace{\left( b_0, 0, 0, \cdots , 0 \right) }}\boldsymbol{x}</script><ol>
+<li>传递函数有零点时的实现</li>
+</ol>
+<p>此时：</p>
+<script type="math/tex; mode=display">
+y^{\left( n \right)}+a_{n-1}y^{\left( n-1 \right)}+\cdots +a_1\dot{y}+a_0y=b_ms^m+b_{m-1}s^{m-1}+\cdots +b_1s+b_0u</script><p>相应的传递函数为：</p>
+<script type="math/tex; mode=display">
+W\left( s \right) =\frac{Y\left( s \right)}{U\left( s \right)}=\frac{b_ms^{\left( m \right)}+b_{m-1}s^{\left( m-1 \right)}+\cdots +b_1s+b_0}{s^n+a_{n-1}s^{n-1}+\cdots +a_1s+a_0}\,\, , m\leqslant n</script><p>设待实现的系统传递函数为：</p>
+<script type="math/tex; mode=display">
+W\left( s \right) =\frac{Y\left( s \right)}{U\left( s \right)}=\frac{b_3s^3+b_2s^2+b_1s+b_0}{s^3+a_2s^2+a_1s+a_0}, n=m=3</script><p>n=m,可变换为：</p>
+<script type="math/tex; mode=display">
+W\left( s \right) =b_3+\frac{\left( b_2-a_2b_3 \right) s^2+\left( b_1-a_1b_3 \right) s+\left( b_0-a_0b_3 \right)}{s^3+a_2s^2+a_1s+a_0}</script><p>令：</p>
+<script type="math/tex; mode=display">
+Y_1\left( s \right) =\frac{1}{s^3+a_2s^2+a_1s+a_0}U\left( s \right)</script><p>则：</p>
+<script type="math/tex; mode=display">
+Y\left( s \right) =b_3U\left( s \right) +Y_1\left( s \right) \left[ \left( b_2-a_2b_3 \right) s^2+\left( b_1-a_1b_3 \right) s+\left( b_0-a_0b_3 \right) \right]</script><p>对上式求拉氏反变换：</p>
+<script type="math/tex; mode=display">
+y=b_3u+\left( b_2-a_2b_3 \right) \ddot{y}_1+\left( b_1-a_1b_3 \right) \dot{y}_1+\left( b_0-a_0b_3 \right) y_1
+\\</script><p>系统的状态空间表达式为：</p>
+<script type="math/tex; mode=display">
+x_1=y_1, x_2=\dot{y}_1, x_3=\ddot{y}_1
+\\
+\left[ \begin{array}{c}
+    \dot{x}_1\\
+    \dot{x}_2\\
+    \dot{x}_3\\
+\end{array} \right] =\left[ \begin{matrix}
+    0&        1&        0\\
+    0&        0&        1\\
+    -a_0&        -a_1&        -a_2\\
+\end{matrix} \right] \left[ \begin{array}{c}
+    x_1\\
+    x_2\\
+    x_3\\
+\end{array} \right] +\left[ \begin{array}{c}
+    0\\
+    0\\
+    1\\
+\end{array} \right] u
+\\
+\boldsymbol{y}=\left[ \left( b_0-a_0b_3 \right) , \left( b_1-a_1b_3 \right) , \left( b_2-a_2b_3 \right) \right] \boldsymbol{x}+b_3u
+\\</script><h3 id="状态矢量的线性变换（坐标变换）"><a href="#状态矢量的线性变换（坐标变换）" class="headerlink" title="状态矢量的线性变换（坐标变换）"></a>状态矢量的线性变换（坐标变换）</h3><p>对于一个给定的定常系统，可以选取许多种状态变量，相应地有许多种状态空间表达式描述<br>同一系统，也就是说系统可以有多种结构形式。所选取的状态矢量之间，实际上是一种矢量的线<br>性变换(或称坐标变换) 。</p>
+<h3 id="从状态空间表达式求传递函数阵"><a href="#从状态空间表达式求传递函数阵" class="headerlink" title="从状态空间表达式求传递函数阵"></a>从状态空间表达式求传递函数阵</h3><h3 id="离散时间系统的状态空间表达式"><a href="#离散时间系统的状态空间表达式" class="headerlink" title="离散时间系统的状态空间表达式"></a>离散时间系统的状态空间表达式</h3><h2 id="李雅普诺夫稳定性理论"><a href="#李雅普诺夫稳定性理论" class="headerlink" title="李雅普诺夫稳定性理论"></a>李雅普诺夫稳定性理论</h2><h3 id="李雅普诺夫关于稳定的定义"><a href="#李雅普诺夫关于稳定的定义" class="headerlink" title="李雅普诺夫关于稳定的定义"></a>李雅普诺夫关于稳定的定义</h3><h3 id="李雅普诺夫第二法"><a href="#李雅普诺夫第二法" class="headerlink" title="李雅普诺夫第二法"></a>李雅普诺夫第二法</h3>
                 
             </div>
             <hr/>
@@ -875,7 +946,7 @@ y=b_0x_1</script><p>表示成矩阵形式，则为：</p>
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">7k</span>
+                        class="white-color">7.6k</span>
             
             
             
