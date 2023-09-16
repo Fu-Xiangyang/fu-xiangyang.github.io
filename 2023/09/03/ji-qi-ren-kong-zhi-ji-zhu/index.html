@@ -637,18 +637,14 @@ y=\boldsymbol{Cx}+\boldsymbol{Du}</script><p>对上式作拉氏变换，并假�
 <h3 id="离散时间系统的状态空间表达式"><a href="#离散时间系统的状态空间表达式" class="headerlink" title="离散时间系统的状态空间表达式"></a>离散时间系统的状态空间表达式</h3><h2 id="李雅普诺夫稳定性理论"><a href="#李雅普诺夫稳定性理论" class="headerlink" title="李雅普诺夫稳定性理论"></a>李雅普诺夫稳定性理论</h2><h3 id="李雅普诺夫关于稳定的定义"><a href="#李雅普诺夫关于稳定的定义" class="headerlink" title="李雅普诺夫关于稳定的定义"></a>李雅普诺夫关于稳定的定义</h3><p><strong>自治系统：</strong>系统的齐次状态方程为<script type="math/tex">\dot{x}=f\left( x,t \right) ,  x\left( t_0 \right) =x_0,  t\in \left[ \left. t_0,\infty \right) \right.</script></p>
 <p><strong>状态轨线：</strong>系统的齐次状态方程由初始状态<script type="math/tex">x_0</script>引起的状态运动轨迹，称为系统的状态轨线。</p>
 <script type="math/tex; mode=display">
-x\left( t \right) =\boldsymbol{\varPhi }\left( t;x_0,t_0 \right) ,  t\in \left[ \left. t_0,\infty \right) \right.</script><p><strong>平衡状态：</strong>状态空间中满足$$<br>\dot{x}_e=f\left( x_e,t \right) =0,  \forall t\in \left[ \left. t_0,\infty \right) \right. </p>
-<script type="math/tex; mode=display">的一个状态，即平衡状态的各分量相对时间不再发生变化。==存在性，不唯一性==
-
-
-
-**李雅普诺夫稳定：**
-
-如果齐次状态方程有下述平衡状态$$x_e</script><script type="math/tex; mode=display">
+x\left( t \right) =\boldsymbol{\varPhi }\left( t;x_0,t_0 \right) ,  t\in \left[ \left. t_0,\infty \right) \right.</script><p><strong>平衡状态：</strong>状态空间中满足<script type="math/tex">\dot{x}_e=f\left( x_e,t \right) =0,  \forall t\in \left[ \left. t_0,\infty \right) \right.</script>的一个状态，即平衡状态的各分量相对时间不再发生变化。==存在性，不唯一性==</p>
+<p><strong>李雅普诺夫稳定：</strong></p>
+<p>如果齐次状态方程有下述平衡状态<script type="math/tex">x_e</script></p>
+<script type="math/tex; mode=display">
 \dot{X}=f\left( X,t \right) \,\,, X\left( t_0 \right) =X_0\,\,, t\in \left[ \left. t_0,\infty \right) \right. 
-\\</script><p>对于任意小的实数<script type="math/tex">\varepsilon>0</script>,均存在另一实数<script type="math/tex">\delta \left( \varepsilon ,t_0 \right) >0</script>,当初始状态满足$$<br>\left| X_0-X_e \right| \leqslant \delta \left( \varepsilon ,t_0 \right) </p>
-<script type="math/tex; mode=display">时，系统从任意初态$$x_0$$出发运动轨迹满足：</script><p>\left| \phi \left( t,X_0,t_0 \right) -X_e \right| \leqslant \varepsilon ,  t\geqslant t_0</p>
-<p><script type="math/tex">则称该平衡状态</script>x_e<script type="math/tex">是==李雅普诺夫意义下稳定==的，简称</script>x_e$$是稳定的。</p>
+\\</script><p>对于任意小的实数<script type="math/tex">\varepsilon>0</script>,均存在另一实数<script type="math/tex">\delta \left( \varepsilon ,t_0 \right) >0</script>,当初始状态满足<script type="math/tex">\left\| X_0-X_e \right\| \leqslant \delta \left( \varepsilon ,t_0 \right)</script>时，系统从任意初态<script type="math/tex">x_0</script>出发运动轨迹满足：</p>
+<script type="math/tex; mode=display">
+\left\| \phi \left( t,X_0,t_0 \right) -X_e \right\| \leqslant \varepsilon ,  t\geqslant t_0</script><p>则称该平衡状态<script type="math/tex">x_e</script>是==李雅普诺夫意义下稳定==的，简称<script type="math/tex">x_e</script>是稳定的。</p>
 <h3 id="李雅普诺夫第二法"><a href="#李雅普诺夫第二法" class="headerlink" title="李雅普诺夫第二法"></a>李雅普诺夫第二法</h3><p>​        由于实际系统的复杂性和多样性，往往不能直观地找到一个能量函数来描述系统的能量关系;<br>​        于是Lyapunov 定义了一个==正定==的==标量==函数，作为虚构的广义能量函数，用其一阶微分的符号特征来判断系统的稳定性。</p>
 
                 
