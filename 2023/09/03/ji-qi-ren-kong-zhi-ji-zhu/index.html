@@ -390,14 +390,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-09-15
+                    2023-09-16
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.6k
+                    2.5k
                 </div>
                 
 
@@ -583,8 +583,74 @@ x_1=y_1, x_2=\dot{y}_1, x_3=\ddot{y}_1
 \end{array} \right] u
 \\
 \boldsymbol{y}=\left[ \left( b_0-a_0b_3 \right) , \left( b_1-a_1b_3 \right) , \left( b_2-a_2b_3 \right) \right] \boldsymbol{x}+b_3u
-\\</script><h3 id="状态矢量的线性变换（坐标变换）"><a href="#状态矢量的线性变换（坐标变换）" class="headerlink" title="状态矢量的线性变换（坐标变换）"></a>状态矢量的线性变换（坐标变换）</h3><p>对于一个给定的定常系统，可以选取许多种状态变量，相应地有许多种状态空间表达式描述<br>同一系统，也就是说系统可以有多种结构形式。所选取的状态矢量之间，实际上是一种矢量的线<br>性变换(或称坐标变换) 。</p>
-<h3 id="从状态空间表达式求传递函数阵"><a href="#从状态空间表达式求传递函数阵" class="headerlink" title="从状态空间表达式求传递函数阵"></a>从状态空间表达式求传递函数阵</h3><h3 id="离散时间系统的状态空间表达式"><a href="#离散时间系统的状态空间表达式" class="headerlink" title="离散时间系统的状态空间表达式"></a>离散时间系统的状态空间表达式</h3><h2 id="李雅普诺夫稳定性理论"><a href="#李雅普诺夫稳定性理论" class="headerlink" title="李雅普诺夫稳定性理论"></a>李雅普诺夫稳定性理论</h2><h3 id="李雅普诺夫关于稳定的定义"><a href="#李雅普诺夫关于稳定的定义" class="headerlink" title="李雅普诺夫关于稳定的定义"></a>李雅普诺夫关于稳定的定义</h3><h3 id="李雅普诺夫第二法"><a href="#李雅普诺夫第二法" class="headerlink" title="李雅普诺夫第二法"></a>李雅普诺夫第二法</h3>
+\\</script><h3 id="状态矢量的线性变换（坐标变换）"><a href="#状态矢量的线性变换（坐标变换）" class="headerlink" title="状态矢量的线性变换（坐标变换）"></a>状态矢量的线性变换（坐标变换）</h3><p>​        对于一个给定的定常系统，可以选取许多种状态变量，相应地有许多种状态空间表达式描述<br>同一系统，也就是说系统可以有多种结构形式。所选取的状态矢量之间，实际上是一种矢量的线<br>性变换(或称坐标变换) 。</p>
+<p>设给定系统为：</p>
+<script type="math/tex; mode=display">
+\left. \begin{array}{r}
+    \dot{x}=\boldsymbol{Ax}+\boldsymbol{Bu}, x\left( 0 \right) =x_0\\
+    y=\boldsymbol{Cx}+\boldsymbol{Du}\\
+\end{array} \right\}</script><p>总可以找到非奇异矩阵T，将状态矢量x作线性变换，得到状态矢量z：</p>
+<script type="math/tex; mode=display">
+\boldsymbol{x}=\boldsymbol{Tz}, \text{即} \boldsymbol{z}=\boldsymbol{T}^{-1}\boldsymbol{x}</script><p>则可得到新的状态空间表达式：</p>
+<script type="math/tex; mode=display">
+\dot{z}=T^{-1}ATz+T^{-1}Bu=\bar{A}z+Bu
+\\
+y=CTz+Du=\bar{C}z+\bar{D}u
+\\
+z\left( 0 \right) =T^{-1}x\left( 0 \right)</script><p>T称为变换矩阵</p>
+<p><strong>系统特征值不变</strong></p>
+<script type="math/tex; mode=display">
+\dot{x}=\boldsymbol{Ax}+\boldsymbol{Bu}\,\,
+\\
+y=\boldsymbol{Cx}+\boldsymbol{Du}</script><p>此系统的特征值就是系统矩阵A的特征值，则下列特征方程的根。</p>
+<script type="math/tex; mode=display">
+\left| \lambda I-A \right|=0</script><p>经非奇异变换后：</p>
+<script type="math/tex; mode=display">
+\dot{z}=T^{-1}ATz+T^{-1}Bu
+\\
+y=CTz+Du</script><p>其特征方程为：</p>
+<script type="math/tex; mode=display">
+\left| \lambda I-T^{-1}AT \right|=\left| \lambda T^{-1}T-T^{-1}AT \right|=\left| T^{-1}\lambda T-T^{-1}AT \right|
+\\
+=\left| T^{-1} \right|\left| \lambda I-A \right|\left| T \right|=\left| T^{-1}T \right|\left| \lambda I-A \right|=\left| \lambda I-A \right|
+\\</script><p>==经过非奇异变换后，系统的特征值不变，系统的特征方程系数也不变。==</p>
+<p>==特征方程多项式的系数称为系统的不变量。==</p>
+<h3 id="从状态空间表达式求传递函数阵"><a href="#从状态空间表达式求传递函数阵" class="headerlink" title="从状态空间表达式求传递函数阵"></a>从状态空间表达式求传递函数阵</h3><p><strong>单输入——单输出系统</strong></p>
+<script type="math/tex; mode=display">
+\dot{x}=\boldsymbol{Ax}+\boldsymbol{Bu}\,\,
+\\
+y=\boldsymbol{Cx}+\boldsymbol{Du}</script><p>对上式作拉氏变换，并假定初始条件为零，则有：</p>
+<script type="math/tex; mode=display">
+\boldsymbol{X}\left( s \right) =\left( s\boldsymbol{I}-\boldsymbol{A} \right) ^{-1}\boldsymbol{b}U\left( s \right) 
+\\
+\boldsymbol{Y}\left( s \right) =c\boldsymbol{X}\left( s \right) +dU\left( s \right)</script><p>故U-X之间的传递函数为一个n×1的列阵函数：</p>
+<script type="math/tex; mode=display">
+\boldsymbol{W}_{\boldsymbol{ux}}\left( s \right) =\frac{\boldsymbol{X}\left( s \right)}{\boldsymbol{U}\left( s \right)}=\left( s\boldsymbol{I}-\boldsymbol{A} \right) ^{-1}</script><p>U-X之间的传递函数为一个标量：</p>
+<script type="math/tex; mode=display">
+\boldsymbol{W}\left( s \right) =\frac{\boldsymbol{Y}\left( s \right)}{\boldsymbol{U}\left( s \right)}=\boldsymbol{c}\left( s\boldsymbol{I}-\boldsymbol{A} \right) ^{-1}\boldsymbol{b}+d</script><p><strong>多输入多输出系统</strong></p>
+<script type="math/tex; mode=display">
+\boldsymbol{W}\left( s \right) =\frac{\boldsymbol{Y}\left( s \right)}{\boldsymbol{U}\left( s \right)}=\boldsymbol{C}\left( s\boldsymbol{I}-\boldsymbol{A} \right) ^{-1}\boldsymbol{B}+D</script><p>还可以表示为：</p>
+<script type="math/tex; mode=display">
+\boldsymbol{W}\left( s \right) =\frac{C\left[ adj\left( sI-A \right) \right] B+\left| sI-A \right|D}{\left| sI-A \right|}</script><p>传递函数的分母就是系统矩阵 A 的特征多项式，分子是一个多项式矩阵。</p>
+<p>经典控制理论中的系统性能与闭环极点相关，而闭环极点与A矩阵的特征值相关，</p>
+<p>因此控制的目的就是配置A的特征值，称为极点配置。</p>
+<h3 id="离散时间系统的状态空间表达式"><a href="#离散时间系统的状态空间表达式" class="headerlink" title="离散时间系统的状态空间表达式"></a>离散时间系统的状态空间表达式</h3><h2 id="李雅普诺夫稳定性理论"><a href="#李雅普诺夫稳定性理论" class="headerlink" title="李雅普诺夫稳定性理论"></a>李雅普诺夫稳定性理论</h2><h3 id="李雅普诺夫关于稳定的定义"><a href="#李雅普诺夫关于稳定的定义" class="headerlink" title="李雅普诺夫关于稳定的定义"></a>李雅普诺夫关于稳定的定义</h3><p><strong>自治系统：</strong>系统的齐次状态方程为<script type="math/tex">\dot{x}=f\left( x,t \right) ,  x\left( t_0 \right) =x_0,  t\in \left[ \left. t_0,\infty \right) \right.</script></p>
+<p><strong>状态轨线：</strong>系统的齐次状态方程由初始状态<script type="math/tex">x_0</script>引起的状态运动轨迹，称为系统的状态轨线。</p>
+<script type="math/tex; mode=display">
+x\left( t \right) =\boldsymbol{\varPhi }\left( t;x_0,t_0 \right) ,  t\in \left[ \left. t_0,\infty \right) \right.</script><p><strong>平衡状态：</strong>状态空间中满足$$<br>\dot{x}_e=f\left( x_e,t \right) =0,  \forall t\in \left[ \left. t_0,\infty \right) \right. </p>
+<script type="math/tex; mode=display">的一个状态，即平衡状态的各分量相对时间不再发生变化。==存在性，不唯一性==
+
+
+
+**李雅普诺夫稳定：**
+
+如果齐次状态方程有下述平衡状态$$x_e</script><script type="math/tex; mode=display">
+\dot{X}=f\left( X,t \right) \,\,, X\left( t_0 \right) =X_0\,\,, t\in \left[ \left. t_0,\infty \right) \right. 
+\\</script><p>对于任意小的实数<script type="math/tex">\varepsilon>0</script>,均存在另一实数<script type="math/tex">\delta \left( \varepsilon ,t_0 \right) >0</script>,当初始状态满足$$<br>\left| X_0-X_e \right| \leqslant \delta \left( \varepsilon ,t_0 \right) </p>
+<script type="math/tex; mode=display">时，系统从任意初态$$x_0$$出发运动轨迹满足：</script><p>\left| \phi \left( t,X_0,t_0 \right) -X_e \right| \leqslant \varepsilon ,  t\geqslant t_0</p>
+<p><script type="math/tex">则称该平衡状态</script>x_e<script type="math/tex">是==李雅普诺夫意义下稳定==的，简称</script>x_e$$是稳定的。</p>
+<h3 id="李雅普诺夫第二法"><a href="#李雅普诺夫第二法" class="headerlink" title="李雅普诺夫第二法"></a>李雅普诺夫第二法</h3><p>​        由于实际系统的复杂性和多样性，往往不能直观地找到一个能量函数来描述系统的能量关系;<br>​        于是Lyapunov 定义了一个==正定==的==标量==函数，作为虚构的广义能量函数，用其一阶微分的符号特征来判断系统的稳定性。</p>
+
                 
             </div>
             <hr/>
@@ -946,7 +1012,7 @@ x_1=y_1, x_2=\dot{y}_1, x_3=\ddot{y}_1
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">7.6k</span>
+                        class="white-color">9.1k</span>
             
             
             
