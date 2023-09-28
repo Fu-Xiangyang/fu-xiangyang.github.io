@@ -386,14 +386,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-09-19
+                    2023-09-27
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.1k
+                    2.4k
                 </div>
                 
 
@@ -486,7 +486,7 @@
 <p><em>近似真值：</em></p>
 </blockquote>
 <h3 id="1-3-2-测量误差的分类"><a href="#1-3-2-测量误差的分类" class="headerlink" title="1.3.2 测量误差的分类"></a>1.3.2 测量误差的分类</h3><ol>
-<li>==按性质分类==</li>
+<li><strong>按表示方法分类</strong></li>
 </ol>
 <div class="table-container">
 <table>
@@ -553,8 +553,14 @@
 <p>重点是2.1.2，</p>
 </blockquote>
 <h2 id="2-1-测试系统概述"><a href="#2-1-测试系统概述" class="headerlink" title="2.1 测试系统概述"></a>2.1 测试系统概述</h2><h3 id="2-1-1测试系统基本概念"><a href="#2-1-1测试系统基本概念" class="headerlink" title="2.1.1测试系统基本概念"></a>2.1.1测试系统基本概念</h3><p>测试系统是指为完成某种物理量的测量而由某种或多种变换特性的物理装置构成的总体。</p>
-<p>测试装置自身的物理结构所决定的测试系统对信号传递变换的影响特性称为”==测试系统的传递特性==“，简称”系统的传递特性“或”系统的特性“。</p>
-<h3 id="2-1-2-理想测试系统——线性时不变系统"><a href="#2-1-2-理想测试系统——线性时不变系统" class="headerlink" title="2.1.2 理想测试系统——线性时不变系统"></a>2.1.2 理想测试系统——线性时不变系统</h3><p>​        我们希望测试系统的==输出信号能准确地反映被测量==，即理想的测试系统应该具有单值的、确定的输入/输出关系，而且输出与输入之间以线性关系为最佳。</p>
+<p>测试装置自身的物理结构所决定的测试系统对信号传递变换的影响特性称为”<strong>测试系统的传递特性</strong>“，简称”系统的传递特性“或”系统的特性“。</p>
+<p><strong>系统分析中的三类问题：</strong></p>
+<ul>
+<li>当输入、输出是可测量的(已知)，可以通过它们推断系统的传输特性。（系统辨识）</li>
+<li>当输入特性已知，输出可测量，可以通过它们推断导致该输出的输入量。（反求）</li>
+<li>如果输入和系统特性已知，则可以推断和估计系统的输出量。（预测）</li>
+</ul>
+<h3 id="2-1-2-理想测试系统——线性时不变系统"><a href="#2-1-2-理想测试系统——线性时不变系统" class="headerlink" title="2.1.2 理想测试系统——线性时不变系统"></a>2.1.2 理想测试系统——线性时不变系统</h3><p>​        我们希望测试系统的<strong>输出信号能准确地反映被测量</strong>，即理想的测试系统应该具有单值的、确定的输入/输出关系，而且输出与输入之间以线性关系为最佳。</p>
 <p><strong>线性时不变系统的主要性质</strong></p>
 <div class="table-container">
 <table>
@@ -593,7 +599,20 @@
 </tbody>
 </table>
 </div>
-<h2 id="2-2-测试系统的静态特性"><a href="#2-2-测试系统的静态特性" class="headerlink" title="2.2 测试系统的静态特性"></a>2.2 测试系统的静态特性</h2><h3 id="2-2-1-静态传递方程"><a href="#2-2-1-静态传递方程" class="headerlink" title="2.2.1 静态传递方程"></a>2.2.1 静态传递方程</h3><h3 id="2-2-2-测试系统静态特性参数"><a href="#2-2-2-测试系统静态特性参数" class="headerlink" title="2.2.2 测试系统静态特性参数"></a>2.2.2 测试系统静态特性参数</h3><h2 id="2-3-测试系统的动态特性"><a href="#2-3-测试系统的动态特性" class="headerlink" title="2.3 测试系统的动态特性"></a>2.3 测试系统的动态特性</h2><h3 id="2-3-1-系统描述方法"><a href="#2-3-1-系统描述方法" class="headerlink" title="2.3.1 系统描述方法"></a>2.3.1 系统描述方法</h3><h3 id="2-3-2-测试系统动态特性参数测试"><a href="#2-3-2-测试系统动态特性参数测试" class="headerlink" title="2.3.2 测试系统动态特性参数测试"></a>2.3.2 测试系统动态特性参数测试</h3><h2 id="2-4-测试系统不失真测试条件及分析"><a href="#2-4-测试系统不失真测试条件及分析" class="headerlink" title="2.4 测试系统不失真测试条件及分析"></a>2.4 测试系统不失真测试条件及分析</h2><h3 id="2-4-1-不失真测试条件"><a href="#2-4-1-不失真测试条件" class="headerlink" title="2.4.1 不失真测试条件"></a>2.4.1 不失真测试条件</h3><h3 id="2-4-2不失真测试分析"><a href="#2-4-2不失真测试分析" class="headerlink" title="2.4.2不失真测试分析"></a>2.4.2不失真测试分析</h3><h2 id="2-5-测试系统的选择与调试"><a href="#2-5-测试系统的选择与调试" class="headerlink" title="2.5 测试系统的选择与调试"></a>2.5 测试系统的选择与调试</h2><h3 id="2-5-1-测试系统选择原则"><a href="#2-5-1-测试系统选择原则" class="headerlink" title="2.5.1 测试系统选择原则"></a>2.5.1 测试系统选择原则</h3><h3 id="2-5-2-测试系统设计考虑的几个问题"><a href="#2-5-2-测试系统设计考虑的几个问题" class="headerlink" title="2.5.2 测试系统设计考虑的几个问题"></a>2.5.2 测试系统设计考虑的几个问题</h3><h3 id="2-5-3-测试系统的调试"><a href="#2-5-3-测试系统的调试" class="headerlink" title="2.5.3 测试系统的调试"></a>2.5.3 测试系统的调试</h3><h3 id="2-5-4-测试系统的标定"><a href="#2-5-4-测试系统的标定" class="headerlink" title="2.5.4 测试系统的标定"></a>2.5.4 测试系统的标定</h3><h1 id="第三章-传感器及其应用"><a href="#第三章-传感器及其应用" class="headerlink" title="第三章 传感器及其应用"></a>第三章 传感器及其应用</h1><h2 id="3-1-概论"><a href="#3-1-概论" class="headerlink" title="3.1 概论"></a>3.1 概论</h2><h3 id="3-1-1-传感器的定义"><a href="#3-1-1-传感器的定义" class="headerlink" title="3.1.1 传感器的定义"></a>3.1.1 传感器的定义</h3><p>能感受规定的被测量并按照一定的规律转换成可用输出信号的器件或者装置。</p>
+<h2 id="2-2-测试系统的静态特性"><a href="#2-2-测试系统的静态特性" class="headerlink" title="2.2 测试系统的静态特性"></a>2.2 测试系统的静态特性</h2><h3 id="2-2-1-静态传递方程"><a href="#2-2-1-静态传递方程" class="headerlink" title="2.2.1 静态传递方程"></a>2.2.1 静态传递方程</h3><p>测试系统的静态特性是指当输入信号为不变或缓变信号时，输出和输入之间的关系。</p>
+<p>测试系统处于静态测试时，输入和输出的各阶导数均为零，</p>
+<script type="math/tex; mode=display">
+y(t)=\cfrac{b_0}{a_0}x</script><p>上式即为测试系统的静态传递方程。</p>
+<h3 id="2-2-2-测试系统静态特性参数"><a href="#2-2-2-测试系统静态特性参数" class="headerlink" title="2.2.2 测试系统静态特性参数"></a>2.2.2 测试系统静态特性参数</h3><ul>
+<li><p>灵敏度：输出信号<script type="math/tex">y</script>变化量<script type="math/tex">\Delta{y}</script>与输入信号<script type="math/tex">x</script>变化量<script type="math/tex">\Delta{x}</script>之比，即<script type="math/tex">S=\cfrac{\Delta{y}}{\Delta{x}}</script></p>
+<p>  表征的是测试系统对输入信号变化的一种反应能力</p>
+</li>
+<li><p>线性度或非线性度：测试系统实际输入输出特性曲线与理想的输入输出特性曲线的<strong>接近或偏离程度</strong></p>
+</li>
+<li><p>回程误差(迟滞)：</p>
+</li>
+</ul>
+<h2 id="2-3-测试系统的动态特性"><a href="#2-3-测试系统的动态特性" class="headerlink" title="2.3 测试系统的动态特性"></a>2.3 测试系统的动态特性</h2><h3 id="2-3-1-系统描述方法"><a href="#2-3-1-系统描述方法" class="headerlink" title="2.3.1 系统描述方法"></a>2.3.1 系统描述方法</h3><h3 id="2-3-2-测试系统动态特性参数测试"><a href="#2-3-2-测试系统动态特性参数测试" class="headerlink" title="2.3.2 测试系统动态特性参数测试"></a>2.3.2 测试系统动态特性参数测试</h3><h2 id="2-4-测试系统不失真测试条件及分析"><a href="#2-4-测试系统不失真测试条件及分析" class="headerlink" title="2.4 测试系统不失真测试条件及分析"></a>2.4 测试系统不失真测试条件及分析</h2><h3 id="2-4-1-不失真测试条件"><a href="#2-4-1-不失真测试条件" class="headerlink" title="2.4.1 不失真测试条件"></a>2.4.1 不失真测试条件</h3><h3 id="2-4-2不失真测试分析"><a href="#2-4-2不失真测试分析" class="headerlink" title="2.4.2不失真测试分析"></a>2.4.2不失真测试分析</h3><h2 id="2-5-测试系统的选择与调试"><a href="#2-5-测试系统的选择与调试" class="headerlink" title="2.5 测试系统的选择与调试"></a>2.5 测试系统的选择与调试</h2><h3 id="2-5-1-测试系统选择原则"><a href="#2-5-1-测试系统选择原则" class="headerlink" title="2.5.1 测试系统选择原则"></a>2.5.1 测试系统选择原则</h3><h3 id="2-5-2-测试系统设计考虑的几个问题"><a href="#2-5-2-测试系统设计考虑的几个问题" class="headerlink" title="2.5.2 测试系统设计考虑的几个问题"></a>2.5.2 测试系统设计考虑的几个问题</h3><h3 id="2-5-3-测试系统的调试"><a href="#2-5-3-测试系统的调试" class="headerlink" title="2.5.3 测试系统的调试"></a>2.5.3 测试系统的调试</h3><h3 id="2-5-4-测试系统的标定"><a href="#2-5-4-测试系统的标定" class="headerlink" title="2.5.4 测试系统的标定"></a>2.5.4 测试系统的标定</h3><h1 id="第三章-传感器及其应用"><a href="#第三章-传感器及其应用" class="headerlink" title="第三章 传感器及其应用"></a>第三章 传感器及其应用</h1><h2 id="3-1-概论"><a href="#3-1-概论" class="headerlink" title="3.1 概论"></a>3.1 概论</h2><h3 id="3-1-1-传感器的定义"><a href="#3-1-1-传感器的定义" class="headerlink" title="3.1.1 传感器的定义"></a>3.1.1 传感器的定义</h3><p>能感受规定的被测量并按照一定的规律转换成可用输出信号的器件或者装置。</p>
 <ol>
 <li>传感器是测量装置，能完成检测技术</li>
 <li>一个指定的传感器只能感受或响应规定的被测量，被测量既可以是电量也可以是非电量</li>
@@ -857,6 +876,43 @@
 </div>
 
 
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('1')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE' || selection.getRangeAt(0).commonAncestorContainer.nodeName === 'CODE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: FuXiangyang&#39;s Blog<br />'
+            + '文章作者: FuXiangyang<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
 
 <!-- 代码块功能依赖 -->
 <script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
@@ -994,7 +1050,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">10.5k</span>
+                        class="white-color">12.9k</span>
             
             
             
@@ -1266,6 +1322,8 @@ $(function () {
 
     
 
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
     
 
     
