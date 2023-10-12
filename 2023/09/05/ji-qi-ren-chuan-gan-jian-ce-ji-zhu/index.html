@@ -386,14 +386,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-09-27
+                    2023-10-11
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.4k
+                    3.6k
                 </div>
                 
 
@@ -609,10 +609,91 @@ y(t)=\cfrac{b_0}{a_0}x</script><p>上式即为测试系统的静态传递方程�
 </li>
 <li><p>线性度或非线性度：测试系统实际输入输出特性曲线与理想的输入输出特性曲线的<strong>接近或偏离程度</strong></p>
 </li>
-<li><p>回程误差(迟滞)：</p>
+<li><p>回程误差(迟滞)：输入量增加时（正行程）的标定曲线与输入量减少时（反行程）所得的标定曲线往往不重合</p>
 </li>
 </ul>
-<h2 id="2-3-测试系统的动态特性"><a href="#2-3-测试系统的动态特性" class="headerlink" title="2.3 测试系统的动态特性"></a>2.3 测试系统的动态特性</h2><h3 id="2-3-1-系统描述方法"><a href="#2-3-1-系统描述方法" class="headerlink" title="2.3.1 系统描述方法"></a>2.3.1 系统描述方法</h3><h3 id="2-3-2-测试系统动态特性参数测试"><a href="#2-3-2-测试系统动态特性参数测试" class="headerlink" title="2.3.2 测试系统动态特性参数测试"></a>2.3.2 测试系统动态特性参数测试</h3><h2 id="2-4-测试系统不失真测试条件及分析"><a href="#2-4-测试系统不失真测试条件及分析" class="headerlink" title="2.4 测试系统不失真测试条件及分析"></a>2.4 测试系统不失真测试条件及分析</h2><h3 id="2-4-1-不失真测试条件"><a href="#2-4-1-不失真测试条件" class="headerlink" title="2.4.1 不失真测试条件"></a>2.4.1 不失真测试条件</h3><h3 id="2-4-2不失真测试分析"><a href="#2-4-2不失真测试分析" class="headerlink" title="2.4.2不失真测试分析"></a>2.4.2不失真测试分析</h3><h2 id="2-5-测试系统的选择与调试"><a href="#2-5-测试系统的选择与调试" class="headerlink" title="2.5 测试系统的选择与调试"></a>2.5 测试系统的选择与调试</h2><h3 id="2-5-1-测试系统选择原则"><a href="#2-5-1-测试系统选择原则" class="headerlink" title="2.5.1 测试系统选择原则"></a>2.5.1 测试系统选择原则</h3><h3 id="2-5-2-测试系统设计考虑的几个问题"><a href="#2-5-2-测试系统设计考虑的几个问题" class="headerlink" title="2.5.2 测试系统设计考虑的几个问题"></a>2.5.2 测试系统设计考虑的几个问题</h3><h3 id="2-5-3-测试系统的调试"><a href="#2-5-3-测试系统的调试" class="headerlink" title="2.5.3 测试系统的调试"></a>2.5.3 测试系统的调试</h3><h3 id="2-5-4-测试系统的标定"><a href="#2-5-4-测试系统的标定" class="headerlink" title="2.5.4 测试系统的标定"></a>2.5.4 测试系统的标定</h3><h1 id="第三章-传感器及其应用"><a href="#第三章-传感器及其应用" class="headerlink" title="第三章 传感器及其应用"></a>第三章 传感器及其应用</h1><h2 id="3-1-概论"><a href="#3-1-概论" class="headerlink" title="3.1 概论"></a>3.1 概论</h2><h3 id="3-1-1-传感器的定义"><a href="#3-1-1-传感器的定义" class="headerlink" title="3.1.1 传感器的定义"></a>3.1.1 传感器的定义</h3><p>能感受规定的被测量并按照一定的规律转换成可用输出信号的器件或者装置。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BC%A0%E6%84%9F%E6%A3%80%E6%B5%8B%E6%8A%80%E6%9C%AF/20231009/01.png" style="zoom: 15%;"></th>
+<th style="text-align:center">回程误差=$\cfrac{h_{max}}{A}\times 100\%$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li><p>重复性：输入量按同一方向变化时，在全量程范围内重复进行测量时所得到各特性曲线的重复程度，一般采用输出最大不重复误差$\Delta$与满量程输出值A的百分比来表示</p>
+<p>  重复性可反映测试系统的随机误差的大小</p>
+</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BC%A0%E6%84%9F%E6%A3%80%E6%B5%8B%E6%8A%80%E6%9C%AF/20231009/02.png" style="zoom:15%;"></th>
+<th style="text-align:center">$\delta=\cfrac{\Delta}{A}\times100\%$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li><p>漂移：是指测试系统在输入不变的条件下，输出随时间而变化的趋势。</p>
+<p>  点漂：在规定的条件下，当输入不变时在规定时间内输出的变化。</p>
+<p>  零漂：在测试系统测试范围最低值处的点漂，称为零点漂移。</p>
+<p>  温漂：即由于周围的温度变化而引起输出的变化。</p>
+<p>  产生漂移的原因：</p>
+<ul>
+<li><p>仪器自身结构参数的变化</p>
+</li>
+<li><p>周围环境的变化（如温度、湿度等）对输出的影响</p>
+</li>
+</ul>
+</li>
+<li><p>测量范围：输入与输出保持线性关系的最小输入量与最大输入量之间的范围。</p>
+</li>
+<li>量程：测试系统示值范围的上限值与下限值之差。　</li>
+<li>分辨率：输出信号的最小变化与满量程输出值的的百分比。表明测试装置的相对分辨能力。　</li>
+<li>死区：当测试系统输入发生变化时，其输出尚未建立的现象。</li>
+<li>稳定性：测试系统示值的变化量与时间比值的关系。</li>
+</ul>
+<h2 id="2-3-测试系统的动态特性"><a href="#2-3-测试系统的动态特性" class="headerlink" title="2.3 测试系统的动态特性"></a>2.3 测试系统的动态特性</h2><h3 id="2-3-1-系统描述方法"><a href="#2-3-1-系统描述方法" class="headerlink" title="2.3.1 系统描述方法"></a>2.3.1 系统描述方法</h3><ol>
+<li><p>传递函数</p>
+<p> 描述系统动态特性，包含了瞬态和稳态事件响应的全部信息</p>
+<p> 条件：</p>
+<ul>
+<li>线性系统的初始状态为零状态</li>
+<li>$x(t)\leftrightarrow X(s),y(t)\leftrightarrow Y(s)$</li>
+</ul>
+</li>
+<li><p>频率响应函数</p>
+<p> 传递函数$G(s)$,令$s=j\omega$</p>
+<p> 幅频特性$A(\omega)=\left|{G(j\omega)}\right|$:反映系统在不同频率正弦信号作用下，输出稳态幅值与输入信号幅值的比值，即系统的放大（或衰减）特性.</p>
+<p> 相频特性$\varphi(\omega)=\angle G(j\omega)$:反映系统在不同频率正弦信号的作用下，稳态输出信号的相角与输入信号相角之差。</p>
+</li>
+</ol>
+<h3 id="2-3-2-测试系统动态特性参数测试"><a href="#2-3-2-测试系统动态特性参数测试" class="headerlink" title="2.3.2 测试系统动态特性参数测试"></a>2.3.2 测试系统动态特性参数测试</h3><ol>
+<li><p>频率（稳态）响应法</p>
+<p> 对系统施以频率各不相同、但幅值不变的已知正弦激励，对于每一种频率的正弦激励，在系统的输出达到稳态后测量出输出与输入的幅值比和相位差，这样，在激励频率由低到高依次改变时，便可获得系统的幅频和相频特性曲线。</p>
+<p> <img src="https://blogfxy.oss-cn-beijing.aliyuncs.com/%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BC%A0%E6%84%9F%E6%A3%80%E6%B5%8B%E6%8A%80%E6%9C%AF/20231009/03.png" style="zoom:80%;"></p>
+</li>
+<li><p>脉冲响应法</p>
+</li>
+</ol>
+<ol>
+<li>阶跃响应法</li>
+</ol>
+<h2 id="2-4-测试系统不失真测试条件及分析"><a href="#2-4-测试系统不失真测试条件及分析" class="headerlink" title="2.4 测试系统不失真测试条件及分析"></a>2.4 测试系统不失真测试条件及分析</h2><h3 id="2-4-1-不失真测试条件"><a href="#2-4-1-不失真测试条件" class="headerlink" title="2.4.1 不失真测试条件"></a>2.4.1 不失真测试条件</h3><h3 id="2-4-2不失真测试分析"><a href="#2-4-2不失真测试分析" class="headerlink" title="2.4.2不失真测试分析"></a>2.4.2不失真测试分析</h3><h2 id="2-5-测试系统的选择与调试"><a href="#2-5-测试系统的选择与调试" class="headerlink" title="2.5 测试系统的选择与调试"></a>2.5 测试系统的选择与调试</h2><h3 id="2-5-1-测试系统选择原则"><a href="#2-5-1-测试系统选择原则" class="headerlink" title="2.5.1 测试系统选择原则"></a>2.5.1 测试系统选择原则</h3><h3 id="2-5-2-测试系统设计考虑的几个问题"><a href="#2-5-2-测试系统设计考虑的几个问题" class="headerlink" title="2.5.2 测试系统设计考虑的几个问题"></a>2.5.2 测试系统设计考虑的几个问题</h3><h3 id="2-5-3-测试系统的调试"><a href="#2-5-3-测试系统的调试" class="headerlink" title="2.5.3 测试系统的调试"></a>2.5.3 测试系统的调试</h3><h3 id="2-5-4-测试系统的标定"><a href="#2-5-4-测试系统的标定" class="headerlink" title="2.5.4 测试系统的标定"></a>2.5.4 测试系统的标定</h3><h1 id="第三章-传感器及其应用"><a href="#第三章-传感器及其应用" class="headerlink" title="第三章 传感器及其应用"></a>第三章 传感器及其应用</h1><h2 id="3-1-概论"><a href="#3-1-概论" class="headerlink" title="3.1 概论"></a>3.1 概论</h2><h3 id="3-1-1-传感器的定义"><a href="#3-1-1-传感器的定义" class="headerlink" title="3.1.1 传感器的定义"></a>3.1.1 传感器的定义</h3><p>能感受规定的被测量并按照一定的规律转换成可用输出信号的器件或者装置。</p>
 <ol>
 <li>传感器是测量装置，能完成检测技术</li>
 <li>一个指定的传感器只能感受或响应规定的被测量，被测量既可以是电量也可以是非电量</li>
@@ -664,7 +745,41 @@ y(t)=\cfrac{b_0}{a_0}x</script><p>上式即为测试系统的静态传递方程�
 <li>稳定性</li>
 <li>精度</li>
 </ul>
-<h2 id="3-2-电阻传感器"><a href="#3-2-电阻传感器" class="headerlink" title="3.2 电阻传感器"></a>3.2 电阻传感器</h2><h3 id="3-2-1-电位器式传感器"><a href="#3-2-1-电位器式传感器" class="headerlink" title="3.2.1 电位器式传感器"></a>3.2.1 电位器式传感器</h3><h3 id="3-2-2-电阻应变式传感器"><a href="#3-2-2-电阻应变式传感器" class="headerlink" title="3.2.2 电阻应变式传感器"></a>3.2.2 电阻应变式传感器</h3><h2 id="3-3-电容传感器"><a href="#3-3-电容传感器" class="headerlink" title="3.3 电容传感器"></a>3.3 电容传感器</h2><h3 id="3-3-1-工作原理"><a href="#3-3-1-工作原理" class="headerlink" title="3.3.1 工作原理"></a>3.3.1 工作原理</h3><h3 id="3-3-2-电容传感器分类"><a href="#3-3-2-电容传感器分类" class="headerlink" title="3.3.2 电容传感器分类"></a>3.3.2 电容传感器分类</h3><h2 id="3-4-电感传感器"><a href="#3-4-电感传感器" class="headerlink" title="3.4 电感传感器"></a>3.4 电感传感器</h2><h3 id="3-4-1-自感式传感器"><a href="#3-4-1-自感式传感器" class="headerlink" title="3.4.1 自感式传感器"></a>3.4.1 自感式传感器</h3><h3 id="3-4-2-差动变压器式电感传感器"><a href="#3-4-2-差动变压器式电感传感器" class="headerlink" title="3.4.2 差动变压器式电感传感器"></a>3.4.2 差动变压器式电感传感器</h3><h3 id="3-4-3-涡流式电感传感器"><a href="#3-4-3-涡流式电感传感器" class="headerlink" title="3.4.3 涡流式电感传感器"></a>3.4.3 涡流式电感传感器</h3><h2 id="3-5-磁电传感器"><a href="#3-5-磁电传感器" class="headerlink" title="3.5 磁电传感器"></a>3.5 磁电传感器</h2><h3 id="3-5-1-磁电感应传感器‘"><a href="#3-5-1-磁电感应传感器‘" class="headerlink" title="3.5.1 磁电感应传感器‘"></a>3.5.1 磁电感应传感器‘</h3><h3 id="3-5-2-霍尔传感器"><a href="#3-5-2-霍尔传感器" class="headerlink" title="3.5.2 霍尔传感器"></a>3.5.2 霍尔传感器</h3><h3 id="3-2-3磁敏电阻传感器"><a href="#3-2-3磁敏电阻传感器" class="headerlink" title="3.2.3磁敏电阻传感器"></a>3.2.3磁敏电阻传感器</h3>
+<h2 id="3-2-电阻传感器"><a href="#3-2-电阻传感器" class="headerlink" title="3.2 电阻传感器"></a>3.2 电阻传感器</h2><h3 id="3-2-1-电位器式传感器"><a href="#3-2-1-电位器式传感器" class="headerlink" title="3.2.1 电位器式传感器"></a>3.2.1 电位器式传感器</h3><p>电位器式传感器也称变阻器式传感器，它是在一个电阻元件上装上一个电刷(活动触头)构成的，可以将直线位移、角位移转换为与其成为一定函数关系的电阻或电压输出。</p>
+<p>电位器式传感器的优点是结构简单，价格低廉，性能稳定， 输出信号大，其缺点是分辨率较低，一般精度不高，动态响应较差， 适合于测量变化较慢的量。</p>
+<h3 id="3-2-2-电阻应变式传感器"><a href="#3-2-2-电阻应变式传感器" class="headerlink" title="3.2.2 电阻应变式传感器"></a>3.2.2 电阻应变式传感器</h3><p>将电阻应变片粘贴到各种弹性敏感元件上，使物理量的变化变成应变片的应力、应变变化，从而变成电阻值变化。</p>
+<script type="math/tex; mode=display">
+\cfrac{dR}{R}=(1+2v+\lambda E)\varepsilon</script><ul>
+<li><p>$(1+2v)\varepsilon$: 表示由于材料的几何尺寸的变化而引起的电阻相对变化量。</p>
+</li>
+<li><p>$\lambda E \varepsilon$:表示由于材料的电阻率的变化而引起的电阻相对变化量。</p>
+</li>
+</ul>
+<p>分类：</p>
+<ul>
+<li><p>金属电阻应变片：基于金属导体的应变效应，即金属导体在外力作用下发生机械变形时，其电阻值随着它所受机械变形(伸长或缩短)的变化而发生变化的现象。</p>
+<p>  金属电阻应变片的电阻变化主要是由几何尺寸的变化引起的，故有：</p>
+<script type="math/tex; mode=display">
+  \cfrac{dR}{R}\approx(1+2v)\varepsilon=S\varepsilon</script></li>
+<li><p>半导体应变片：半导体材料有明显的压阻效应，即单晶半导体材料在沿某一轴向方向受外力作用下，半导体材料的电阻率随作用应力而变化。</p>
+<p>  半导体电阻应变片其尺寸上的变化很小，故有：</p>
+<script type="math/tex; mode=display">
+  \cfrac{dR}{R}\approx\lambda E \varepsilon=S\varepsilon</script></li>
+</ul>
+<h2 id="3-3-电容传感器"><a href="#3-3-电容传感器" class="headerlink" title="3.3 电容传感器"></a>3.3 电容传感器</h2><h3 id="3-3-1-工作原理"><a href="#3-3-1-工作原理" class="headerlink" title="3.3.1 工作原理"></a>3.3.1 工作原理</h3><script type="math/tex; mode=display">
+C=\cfrac{\varepsilon\varepsilon_{0}A}{\delta}</script><ul>
+<li>$\varepsilon$:极板介质的相对介电常数</li>
+<li>$\varepsilon_0$:真空介电常数</li>
+<li>$A$:极板面积</li>
+<li>$\delta$:极板间距</li>
+</ul>
+<h3 id="3-3-2-电容传感器分类"><a href="#3-3-2-电容传感器分类" class="headerlink" title="3.3.2 电容传感器分类"></a>3.3.2 电容传感器分类</h3><ol>
+<li><p>变极距型</p>
+<p> 保持电容器两极板相互遮盖的面积A及极板间的介质ε不变，则电容器的值是极板间距离的单值函数。</p>
+<p> 位移变化时所引起的电容量变化为：<br> $$<br> C=\cfrac{\varepsilon\varepsilon_{0}A}{\delta}\Rightarrow dC=-\cfrac{\varepsilon\varepsilon_{0}A}</p>
+</li>
+</ol>
+
                 
             </div>
             <hr/>
@@ -1049,7 +1164,7 @@ y(t)=\cfrac{b_0}{a_0}x</script><p>上式即为测试系统的静态传递方程�
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">17.1k</span>
+                        class="white-color">18.9k</span>
             
             
             
